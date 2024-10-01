@@ -1,0 +1,27 @@
+services:
+  container-and-signature-services:
+    container_name: container-and-signature-services
+    restart: always
+    ports:
+      - '86:8092'
+    volumes:
+      - /opt/trustlynx/stamping-service/container-and-signature-services:/confs
+    environment:
+      - SPRING_CONFIG_LOCATION=/confs/
+    image: 'trustlynx/container-signature-service:24.2.1.3'
+  digital-stamping-service:
+    container_name: digital-stamping-service
+    network_mode: host
+    restart: always
+    privileged: true
+    volumes:
+      - /opt/trustlynx/stamping-service/digital-stamping-service/commands.sh:/scripts/commands.sh
+      - /opt/trustlynx/stamping-service/digital-stamping-service:/confs
+      - /dev/:/dev/
+    environment:
+      - SPRING_CONFIG_LOCATION=/confs/
+    image: 'trustlynx/digital-stamping-service:24.0.1.15'
+
+networks:
+  default:
+

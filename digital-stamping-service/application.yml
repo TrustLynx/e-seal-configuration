@@ -1,0 +1,35 @@
+server:
+  port: 8084
+spring:
+  zipkin:
+    enabled: false
+
+stamping:
+  companies:
+    -
+      name: "TrustLynx"
+      providers:
+        -
+          loginForPublicKey: false
+          relogin: true
+          name: "TL1"
+          tokenLabel: ""
+          tokenSerial: ""
+          publicCertSerial: ""
+          publicCertLabel: ""
+          privateKeyLabel: ""
+          privateKeyID: ""
+          password: ""
+          library: "/usr/local/AWP/lib/libOcsCryptoki.so"
+logging:
+  config: /confs/logback.xml
+  level:
+    root: DEBUG
+    ee:
+      digitalmind: DEBUG
+
+springdoc:
+  swagger-ui:
+    use-root-path: true
+    
+    
