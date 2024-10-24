@@ -18,6 +18,7 @@ timestamp:
           username: username
           password: password
 ```
+After making the changes, restart **container-and-signature-services** container.
 
 # External addresses 
 
