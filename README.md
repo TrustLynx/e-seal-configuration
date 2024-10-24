@@ -21,7 +21,7 @@ timestamp:
 
 # External addresses 
 
-### These addresses should be opened from the server with deployed TL containers:
+### These addresses should be accessable from the server with deployed TL containers:
 
 - https://ec.europa.eu - Trusted lists (TSLs) of every EU member state
 - https://trustlist.gov.lv/tsl/latvian-tsl.xml - Latvian Trusted Service List
