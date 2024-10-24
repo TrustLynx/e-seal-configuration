@@ -1,6 +1,6 @@
 # TimeStamp configuration
 
-Open **/opt/trustlynx/stamping-service/container-and-signature-services/application.yml** configuration file and fill username and password values under timestamp section:
+Open **/opt/trustlynx/stamping-service/container-and-signature-services/application.yml** configuration file and fill username and password values under timestamp section (these values should be recieved from a TSA):
 
 ```
 timestamp:
