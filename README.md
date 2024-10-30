@@ -1,6 +1,6 @@
-# Solution modes: TEST and PROD
-## TEST mode (DEMO e-seal usb stick should be attached)
-### Open container-and-signature-services/application.yml and adjust timestamp and digidoc4j sections:
+# E-sealing solution modes: TEST and PROD
+### TEST mode (DEMO e-seal usb stick should be attached)
+Open **container-and-signature-services/application.yml** and adjust timestamp and digidoc4j sections:
 ```
 timestamp:
   timestampProviders:
@@ -31,8 +31,8 @@ digidoc4j:
       - classpath:certs/Test_of_SK_ORG2.cer
       - classpath:certs/Test_of_SK_ROOT.cer
 ```
-## PROD mode (Production e-seal usb stick should be attached)
-### Open container-and-signature-services/application.yml and adjust timestamp and digidoc4j sections:
+### PROD mode (Production e-seal usb stick should be attached)
+Open **container-and-signature-services/application.yml** and adjust timestamp and digidoc4j sections:
 ```
 timestamp:
   timestampProviders:
@@ -47,6 +47,7 @@ timestamp:
           username: username
           password: password
 ```
+Inside timestamp section do not forget to enter real username and password so TSA connectivity would be available. 
 ```
 digidoc4j:
   configuration:
