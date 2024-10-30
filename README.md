@@ -1,5 +1,5 @@
 # Solution modes: TEST and PROD
-## TEST mode
+## TEST mode (DEMO e-seal usb stick should be attached)
 ### Open container-and-signature-services/application.yml and adjust timestamp and digidoc4j sections:
 ```
 timestamp:
@@ -31,7 +31,7 @@ digidoc4j:
       - classpath:certs/Test_of_SK_ORG2.cer
       - classpath:certs/Test_of_SK_ROOT.cer
 ```
-## PROD mode
+## PROD mode (Production e-seal usb stick should be attached)
 ### Open container-and-signature-services/application.yml and adjust timestamp and digidoc4j sections:
 ```
 timestamp:
