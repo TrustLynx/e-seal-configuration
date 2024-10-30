@@ -61,7 +61,7 @@ digidoc4j:
     preferAiaOcsp: true
     issuers:
 ```
-After changes are done, restart container-and-signature-services container.
+After making the changes, restart **container-and-signature-services** container.
 
 # TimeStamp configuration
 
