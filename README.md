@@ -1,6 +1,10 @@
 # Run performance tests on TrustLynx e-sealing solution using Postman software
 
-Open postman software. Press new and select collection:
+Open postman software. Make sure global setting "Read files outside working directory" is enabled.
+
+![image](https://github.com/user-attachments/assets/8c267b74-51f5-4901-ad7f-2d712ba7479b)
+
+Press new and select collection:
 
 ![image](https://github.com/user-attachments/assets/2d89bfce-d9cd-485c-a71d-7de311fc00df)
 
@@ -28,9 +32,11 @@ Using collection functional menu select option "Run collection":
 
 Configure auto-run collection parameters to fit testing needs: 
 
-![image](https://github.com/user-attachments/assets/7b4ac1c8-fcc9-4d1e-b685-9e5ef69ecfdf)
+![image](https://github.com/user-attachments/assets/5a71fc9b-9ce3-4156-b97d-e3ef7711e951)
 
-Make sure global setting "Read files outside working directory" is enabled.
+Overview the results
+
+![image](https://github.com/user-attachments/assets/890cadb7-0d17-4ee4-9f38-1c1ccaab25b4)
 
 # E-sealing solution modes: TEST and PROD
 ### TEST mode (DEMO e-seal usb stick should be attached)
