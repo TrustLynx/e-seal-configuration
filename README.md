@@ -1,3 +1,37 @@
+# Run performance tests on TrustLynx e-sealing solution using Postman software
+
+Open postman software. Press new and select collection:
+
+![image](https://github.com/user-attachments/assets/2d89bfce-d9cd-485c-a71d-7de311fc00df)
+
+![image](https://github.com/user-attachments/assets/961cef17-7562-4d20-b55c-59c43acbfbc4)
+
+Rename the collection for appropriate name:
+
+![image](https://github.com/user-attachments/assets/0602568a-0c2d-4266-807f-19bc4f4c66c8)
+
+Add new request for collection
+
+![image](https://github.com/user-attachments/assets/f0d7f427-1c53-46f9-88e8-554dec291327)
+
+Define corresponding request using your environment host / port combination. In current example we overview .asice document signing using API
+```
+api/eseal/document/profile/TrustLynx
+```
+and profile with name TrustLynx:
+
+![image](https://github.com/user-attachments/assets/4110c1f6-0a6d-491d-9cdb-61fe63fe9846)
+
+Using collection functional menu select option "Run collection":
+
+![image](https://github.com/user-attachments/assets/e7b93182-c146-4d22-aee2-581eb43ece5c)
+
+Configure auto-run collection parameters to fit testing needs: 
+
+![image](https://github.com/user-attachments/assets/7b4ac1c8-fcc9-4d1e-b685-9e5ef69ecfdf)
+
+Make sure global setting "Read files outside working directory" is enabled.
+
 # E-sealing solution modes: TEST and PROD
 ### TEST mode (DEMO e-seal usb stick should be attached)
 Open **container-and-signature-services/application.yml** and adjust timestamp and digidoc4j sections:
